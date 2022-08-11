@@ -1,0 +1,61 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Item</li>
+  </ol>
+</nav>
+
+<div class="view-user p-5">
+
+{{#each rows}}
+<div class="row mb-5">
+  <div class="col text-center">
+    <h3>{{this.item_name}} {{this.item_category}}</h3>
+  </div>
+</div>
+
+
+ <div class="row">
+  <div class="col">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Category</th>
+          <th scope="col">Supplier</th>
+          <th scope="col">Price</th>
+          <th scope="col" >Date</th>
+          <th scope="col">Stock</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">{{this.item_name}}</th>
+          <td>{{this.item_category}}</td>
+          <td>{{this.supplier}}</td>
+          <td>{{this.price}}</td>
+          <td>{{this.date}}</td>
+          <td>{{this.stock}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ </div>
+
+<div class="row">
+  <div class="col">
+    <b>Description</b>
+    </div>
+  </div>
+<div class="row">
+  <div class="col">
+    {{this.description}}
+    </div>
+  </div>
+
+
+{{/each}}
+
+</div>

@@ -1,0 +1,40 @@
+ <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" value="{{this.item_name}}" placeholder="Item Name" name="item_name">
+            <label for="floatingInput">Item Name</label>
+        </div>
+    </div>
+
+    <div class="col-md">
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelectGrid" value="{{this.item_category}}" name="item_category">
+        <option selected>Item Category</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Keyboard">Keyboard</option>
+        <option value="Mouse">Mouse</option>
+        <option value="CCTV Camera">CCTV Camera</option>
+        <option value="DVR">DVR</option>
+        <option value="etwork Devices">Network Devices</option>
+        <option value="Printer">Printer</option>
+        <option value="Laptop Parts">Laptop Parts</option>
+        <option value="Computer Parts">Computer Parts</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+  </div>
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" value="{{this.supplier}}" placeholder="Supplier" name="supplier">
+            <label for="floatingInput">Supplier</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" value="{{this.price}}" placeholder="Price" name="price">
+            <label for="floatingInput">Price</label>
+        </div>
+    </div>
+    <div class="col-12 d-grid">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
